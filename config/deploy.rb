@@ -1,6 +1,7 @@
+server '18.180.144.186', user: 'ec2-user', roles: %w{app db web}
 # config valid only for current version of Capistrano
 # capistranoのバージョンを記載。固定のバージョンを利用し続け、バージョン変更によるトラブルを防止する
-lock '<3.14.0>'
+lock '3.14.0'
 
 # Capistranoのログの表示に利用する
 set :application, 'deploy_question'
